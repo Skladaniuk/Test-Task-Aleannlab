@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { useParams, useLocation, Link} from 'react-router-dom';
+import { useState } from 'react';
+import {  useLocation, Link} from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { Home } from '../GoogleMap/googleMap';
 import scss from './JobInfo.module.scss';
@@ -43,7 +43,6 @@ export const JobInfo = () => {
             <section className={scss.hero}>
               <div>
                 <button type="button" className={scss.hero__buttonApply}>
-                  {' '}
                   APPLY NOW
                 </button>
                 <h1 className={scss.hero__title}>{currentJob.title}</h1>
@@ -58,7 +57,7 @@ export const JobInfo = () => {
               <p className={scss.hero__description}>{currentJob.description}</p>
               <h2 className={scss.hero__responsopilities}>
                 Responsopilities
-              </h2>{' '}
+              </h2>
               <p className={scss.hero__resDescription}>
                 {currentJob.description}
               </p>
@@ -75,7 +74,6 @@ export const JobInfo = () => {
                 ))}
               </ul>
               <div className={scss.hero__buttonWrapper}>
-                {' '}
                 <button className={scss.hero__button} type="button">
                   APPLY NOW
                 </button>
@@ -88,7 +86,6 @@ export const JobInfo = () => {
               </div>
              <Link  to={pathBack}>
                 <button className={scss.buttonReturn} type="button">
-                  {' '}
                   <MdKeyboardArrowLeft
                     className={scss.buttonReturn__arrowIcon}
                   />
@@ -114,7 +111,6 @@ export const JobInfo = () => {
               <ul className={scss.benefitsButtons}>
                 {currentJob.benefits.map(benefit => (
                   <li key={nanoid()}>
-                    {' '}
                     <button className={scss.benefitButton} type="button">
                       {benefit}
                     </button>

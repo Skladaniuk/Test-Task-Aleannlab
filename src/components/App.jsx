@@ -11,6 +11,7 @@ export const App = () => {
 
   return (
     <div>
+    
     <Routes>
       <Route path = '/' element = {<JobList />}/>
       <Route path = '/:jobId' element ={<JobInfo/>}/>
