@@ -2,7 +2,7 @@
   "name": "test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://skladaniuk.github.io/",
+  "homepage": "https://skladaniuk.github.io/Test-Task-Aleannlab/",
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
     "@react-google-maps/api": "^2.13.1",
