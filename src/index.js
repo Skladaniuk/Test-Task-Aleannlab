@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  
-    <BrowserRouter basename = '/Test-Task-Aleannlab'>
+    <BrowserRouter basename = '/Aleannlab-test-task'>
     <App />
     </BrowserRouter>
     
